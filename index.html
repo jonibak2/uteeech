@@ -2,6 +2,7 @@
 <html lang="he">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>לוז</title>
   <style>
     html, body {
@@ -26,14 +27,26 @@
       text-decoration: none;
       color: black;
       background-color: rgba(255, 255, 255, 0.8);
-      border: 3px solid black; /* Контур */
+      border: 3px solid black;
       border-radius: 10px;
       transition: background-color 0.3s, border-color 0.3s;
     }
 
     a.button:hover {
       background-color: rgba(255, 255, 255, 1);
-      border-color: #444; /* Темнее при наведении */
+      border-color: #444;
+    }
+
+    /* Мобильный фон */
+    @media (max-width: 768px) {
+      html, body {
+        background-image: url('bg2.jpg');
+      }
+
+      a.button {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+      }
     }
   </style>
 </head>
